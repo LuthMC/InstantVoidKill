@@ -3,11 +3,11 @@ version: 1.0.0
 api: 5.0.0
 main: Luthfi\InstantVoidKill\InstantVoidKill
 description: Kill players instantly when they fall into the void
-author: YourName
+author: Luthfi
 commands:
   ivk:
     description: Set the Y level for instant void kill
-    usage: "/ivk set <y-level>"
+    usage: "/ivk <set|toggle|settp>"
     permission: ivk.use
 permission:
   ivk.use:
