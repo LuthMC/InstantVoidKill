@@ -6,10 +6,15 @@ description: Kill players instantly when they fall into the void
 author: Luthfi
 commands:
   ivk:
-    description: Set the Y level for instant void kill
+    description: InstantVoidKill Command
     usage: "/ivk <set|toggle|settp>"
-    permission: ivk.use
 permission:
   ivk.use:
-    description: Allow use ivk command
+    description: Allow use /ivk set command
+    default: op
+  ivk.toggle:
+    description: Allow use /ivk toggle command
+    default: true
+  ivk.settp:
+    description: Allow use /ivk settp command
     default: op
