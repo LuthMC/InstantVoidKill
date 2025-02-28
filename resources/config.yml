@@ -1,1 +1,12 @@
-void_y_level: 0
+# InstantVoidKill Settings
+
+world_settings:
+  world:
+    void_y_level: 0
+
+teleport_instead_of_kill: false
+spawn_location:
+  x: 0
+  y: 100
+  z: 0
+  world: "world"
