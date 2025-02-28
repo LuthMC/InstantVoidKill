@@ -35,6 +35,11 @@ class InstantVoidKill extends PluginBase implements Listener {
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
         if ($command->getName() === "ivk") {
+            if (!$sender->hasPermission("ivk.use")) {
+                $sender->sendMessage("You do not have permission to use this command.");
+                return false;
+            }
+
             if (!isset($args[0])) {
                 $sender->sendMessage("Usage: /ivk set <y-level>");
                 return false;
