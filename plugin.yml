@@ -1,20 +1,20 @@
 name: InstantVoidKill
 version: 1.0.0
 api: 5.0.0
-main: Luthfi\InstantVoidKill\InstantVoidKill
+main: LuthMC\InstantVoidKill\InstantVoidKill
 description: Kill players instantly when they fall into the void
-author: Luthfi
+author: LuthMC
 commands:
   ivk:
     description: InstantVoidKill Command
     usage: "/ivk <set|toggle|settp>"
 permission:
-  ivk.use:
+  instantvoidkill.use:
     description: Allow use /ivk set command
     default: op
-  ivk.toggle:
+  instantvoidkill.toggle:
     description: Allow use /ivk toggle command
     default: true
-  ivk.settp:
+  instantvoidkill.settp:
     description: Allow use /ivk settp command
     default: op

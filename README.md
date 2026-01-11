@@ -1,4 +1,9 @@
-# BetterNick                                    
+<p align="center">
+ <img width="100px" src="https://i.ibb.co/4RJVK54F/icon-1.png" align="center" alt="Icon" />
+ <h2 align="center">InstantVoidKill</h2>
+ <p align="center">A simple instantvoidkill plugin for PocketMine-MP</p>
+</p>
+
 ### ⚙️ Commands
 | Commands | Description |
 |---------|-------------|
@@ -9,15 +14,12 @@
 ### 🔒 Permission
 | Permission | Description |
 |---------|-------------|
-| ```ivk.use``` | Allow use /ivk set command |
-| ```ivk.toggle``` | Allow use /ivk toggle command |
-| ```ivk.settp``` | Allow use /ivk settp command |
+| ```instantvoidkill.use``` | Allow use /ivk set command |
+| ```instantvoidkill.toggle``` | Allow use /ivk toggle command |
+| ```instantvoidkill.settp``` | Allow use /ivk settp command |
 
 ### 🔗 Download                                                                              
 [Dev Builds](https://poggit.pmmp.io/ci/LuthMC/InstantVoidKill/InstantVoidKill)
 
 ### 📢 Found Bugs
-If you found any bugs, feel free to use [this](https://github.com/LuthMC/InstantVoidKill/issues)!
-
-### 📍 Changelog
-• Add more feature!                          
+If you found any bugs, feel free to use [issues](https://github.com/LuthMC/InstantVoidKill/issues)!

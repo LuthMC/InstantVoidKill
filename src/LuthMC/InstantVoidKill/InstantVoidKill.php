@@ -1,6 +1,6 @@
 <?php
 
-namespace Luthfi\InstantVoidKill;
+namespace LuthMC\InstantVoidKill;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
@@ -28,6 +28,7 @@ class InstantVoidKill extends PluginBase implements Listener {
                 ]
             ],
             "teleport_instead_of_kill" => false,
+            "teleport_message" => "You were teleported to safety!",
             "spawn_location" => [
                 "x" => 0,
                 "y" => 100,
@@ -58,7 +59,7 @@ class InstantVoidKill extends PluginBase implements Listener {
                         $spawnLocation["z"],
                         $world
                     ));
-                    $player->sendMessage("You were teleported to safety!");
+                    $player->sendMessage($this->config->get("teleport_message", "You were teleported to safety!"));
                 }
             } else {
                 $player->kill();
@@ -70,7 +71,7 @@ class InstantVoidKill extends PluginBase implements Listener {
         if ($command->getName() === "ivk") {
             switch ($args[0] ?? "") {
                 case "set":
-                    if (!$sender->hasPermission("ivk.use")) {
+                    if (!$sender->hasPermission("instantvoidkill.use")) {
                         $sender->sendMessage("You do not have permission to use this command.");
                         return false;
                     }
@@ -97,7 +98,7 @@ class InstantVoidKill extends PluginBase implements Listener {
                     return true;
 
                 case "toggle":
-                    if (!$sender->hasPermission("ivk.toggle")) {
+                    if (!$sender->hasPermission("instantvoidkill.toggle")) {
                         $sender->sendMessage("You do not have permission to use this command.");
                         return false;
                     }
@@ -118,7 +119,7 @@ class InstantVoidKill extends PluginBase implements Listener {
                     return true;
 
                 case "settp":
-                    if (!$sender->hasPermission("ivk.settp")) {
+                    if (!$sender->hasPermission("instantvoidkill.settp")) {
                         $sender->sendMessage("You do not have permission to use this command.");
                         return false;
                     }

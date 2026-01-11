@@ -5,6 +5,7 @@ world_settings:
     void_y_level: 0
 
 teleport_instead_of_kill: false
+teleport_message: "You were teleported to safety!"
 spawn_location:
   x: 0
   y: 100
